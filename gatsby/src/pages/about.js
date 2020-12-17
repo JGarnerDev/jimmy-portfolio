@@ -1,8 +1,14 @@
 import React from "react"
-import { graphql } from "gatsby"
+
+import Nav from "../components/Nav"
 
 const aboutPage = () => {
-  return <div></div>
+  return (
+    <>
+      <Nav />
+      <main className="about"></main>
+    </>
+  )
 }
 
 export default aboutPage

@@ -1,0 +1,20 @@
+nav {
+  @media only screen and (min-width: 768px) {
+    flex-direction: column !important;
+
+    align-items: flex-start !important;
+    width: 200px;
+    height: 100vh;
+
+    margin-right: 0 !important;
+    background: white;
+    .navbar-nav {
+      flex-direction: column !important;
+      justify-content: space-around;
+      height: 200px;
+      a {
+        padding: 0 !important;
+      }
+    }
+  }
+}
