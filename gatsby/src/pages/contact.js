@@ -2,7 +2,7 @@ import React from "react"
 
 import Nav from "../components/Nav"
 
-const contactPage = () => {
+const ContactPage = () => {
   return (
     <>
       <Nav />
@@ -11,4 +11,4 @@ const contactPage = () => {
   )
 }
 
-export default contactPage
+export default ContactPage

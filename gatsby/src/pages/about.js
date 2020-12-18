@@ -2,7 +2,7 @@ import React from "react"
 
 import Nav from "../components/Nav"
 
-const aboutPage = () => {
+const AboutPage = () => {
   return (
     <>
       <Nav />
@@ -11,4 +11,4 @@ const aboutPage = () => {
   )
 }
 
-export default aboutPage
+export default AboutPage

@@ -1,9 +1,16 @@
 nav {
+  background: white;
+  a {
+    color: black;
+    text-transform: uppercase;
+
+    font-weight: bold;
+  }
   @media only screen and (min-width: 768px) {
     flex-direction: column !important;
 
     align-items: flex-start !important;
-    width: 200px;
+    width: 220px;
     height: 100vh;
 
     margin-right: 0 !important;

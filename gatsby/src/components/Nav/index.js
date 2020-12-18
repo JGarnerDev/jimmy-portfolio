@@ -32,20 +32,18 @@ const Navigation = () => {
   const { linkedIn, instagram } = data.contact.nodes[0]
 
   return (
-    <Navbar collapseOnSelect expand="md">
-      <Navbar.Brand>{name}</Navbar.Brand>
+    <Navbar collapseOnSelect expand="md" sticky="top">
+      <Navbar.Brand>
+        <Link to="/">{name}</Link>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav>
-          <Nav.Link>
-            <Link to="/portraiture">Portraiture</Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="/about">About</Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="/contact">Contact</Link>
-          </Nav.Link>
+          <Link to="/portraiture">Portraiture</Link>
+
+          <Link to="/about">About</Link>
+
+          <Link to="/contact">Contact</Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
