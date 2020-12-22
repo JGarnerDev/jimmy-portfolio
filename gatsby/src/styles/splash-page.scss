@@ -20,9 +20,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 15px;
+
     width: 100%;
-    height: 90%;
+    height: 100%;
 
     text-align: center;
 
@@ -35,11 +35,14 @@
     #links,
     #social,
     #brand {
-      width: 300px;
+      width: 340px;
       margin: 0 auto;
     }
     #brand {
-      background: black;
+      margin: 0;
+      padding-top: 10px;
+      width: 100%;
+      background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.61));
       h1 {
         line-height: 40px;
         font-size: 34px;
@@ -58,11 +61,12 @@
       font-size: 24px;
       text-transform: uppercase;
       font-weight: bold;
+      margin-top: 120px;
     }
 
     #social {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       font-size: 60px;
     }
   }

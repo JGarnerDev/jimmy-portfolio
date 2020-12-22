@@ -42,6 +42,9 @@ const SplashPage = ({ data }) => {
             <Link to="/portraiture">Portraiture</Link>
           </li>
           <li>
+            <Link to="/portraiture">city+lifestyle</Link>
+          </li>
+          <li>
             <Link to="/about">About</Link>
           </li>
           <li>
@@ -52,11 +55,6 @@ const SplashPage = ({ data }) => {
           <li>
             <a href={instagram}>
               <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </li>
-          <li>
-            <a href={linkedIn}>
-              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
         </ul>

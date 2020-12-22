@@ -5,3 +5,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "Caladea";
+  src: url("../fonts/Caladea-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+p {
+  font-family: "Caladea";
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Montserrat";
+}
