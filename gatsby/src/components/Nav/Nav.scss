@@ -6,19 +6,32 @@ nav {
 
     font-weight: bold;
   }
-  @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 20px;
+    margin-top: 2px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  @media only screen and (min-width: 992px) {
     flex-direction: column !important;
 
     align-items: flex-start !important;
-    width: 224px;
+
+    width: 230px;
     height: 100vh;
 
     margin-right: 0 !important;
     background: white;
+
     .navbar-nav {
+      position: absolute;
+      top: calc(28vh + 40px);
+      line-height: 15px;
       flex-direction: column !important;
-      justify-content: space-around;
-      height: 200px;
+      justify-content: space-between;
+      height: 28vh;
       a {
         padding: 0 !important;
       }

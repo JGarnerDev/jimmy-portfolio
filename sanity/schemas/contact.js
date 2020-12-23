@@ -4,10 +4,10 @@ export default {
   type: "document",
   fields: [
     {
-      name: "phoneNumber",
-      title: "Phone number",
+      name: "text",
+      title: "Text",
       type: "string",
-      description: "Phone number where people can contact you",
+      description: "A sentence or two encouraging clients to contact you",
     },
     {
       name: "email",
@@ -15,12 +15,7 @@ export default {
       type: "string",
       description: "Email where people can contact you",
     },
-    {
-      name: "linkedIn",
-      title: "LinkedIn link",
-      type: "url",
-      description: "Link to your LinkedIn account",
-    },
+
     {
       name: "instagram",
       title: "Instagram link",

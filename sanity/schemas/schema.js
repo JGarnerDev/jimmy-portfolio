@@ -4,10 +4,9 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import about from "./about";
 import brand from "./brand";
 import contact from "./contact";
-import lifestylePhoto from "./lifestyle-photo";
-import locationPhoto from "./location-photo";
+import cityandlifestylePhoto from "./cityandlifestyle-photo";
 import portraiturePhoto from "./portraiture-photo";
-import productPhoto from "./product-photo";
+
 import splashpagePhoto from "./splashpage-photo";
 
 export default createSchema({
@@ -16,10 +15,9 @@ export default createSchema({
     about,
     brand,
     contact,
-    lifestylePhoto,
-    locationPhoto,
+    cityandlifestylePhoto,
     portraiturePhoto,
-    productPhoto,
+
     splashpagePhoto,
   ]),
 });

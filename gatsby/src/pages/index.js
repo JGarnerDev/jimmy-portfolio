@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Carousel from "react-bootstrap/Carousel"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 
 import "../styles/global.scss"
 import "../styles/splash-page.scss"
@@ -27,7 +27,7 @@ const renderPhotoSlides = photos => {
 // {renderPhotos(photos)}
 
 const SplashPage = ({ data }) => {
-  const { linkedIn, instagram } = data.contact.nodes[0]
+  const { instagram } = data.contact.nodes[0]
   const { name, description } = data.brand.group[0].nodes[0]
 
   return (
@@ -82,7 +82,6 @@ export const query = graphql`
     }
     contact: allSanityContactInfo {
       nodes {
-        linkedIn
         instagram
       }
     }

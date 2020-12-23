@@ -1,18 +1,12 @@
 .gallery-page {
   display: flex;
+
   flex-direction: column;
-
-  h1 {
-    font-size: 20px;
-    margin-top: 2px;
+  .gallery {
+    margin-top: 10px;
   }
-
-  h2 {
-    font-size: 20px;
-  }
-
   .img-wrapper {
-    margin: 20px 16px;
+    margin: 10px 10px;
   }
 
   .carousel {
@@ -31,6 +25,7 @@
 
     .gatsby-image-wrapper {
       max-width: 1000px;
+
       margin: auto;
     }
     .closeShow {
@@ -47,7 +42,7 @@
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     flex-direction: row;
 
     .gallery {
@@ -55,14 +50,19 @@
       flex-wrap: wrap;
       align-items: flex-start;
       flex-grow: 1;
+
       &::after {
         content: "";
         flex: auto;
       }
       .img-wrapper {
-        min-width: 30%;
-        max-width: 30%;
+        min-width: calc((100vw - 314px) / 3);
+        max-width: 31.2%;
+
         flex-grow: 1;
+      }
+      .gatsby-image-wrapper {
+        height: 28vh;
       }
     }
   }

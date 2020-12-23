@@ -1,6 +1,6 @@
 export default {
-  name: "locationPhoto",
-  title: "Location Photos",
+  name: "cityandlifestyle",
+  title: "City and Lifestyle Photos",
   type: "document",
   fields: [
     {

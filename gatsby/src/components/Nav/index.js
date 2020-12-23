@@ -22,17 +22,16 @@ const Navigation = () => {
       }
       contact: allSanityContactInfo {
         nodes {
-          linkedIn
           instagram
         }
       }
     }
   `)
   const { name, description } = data.brand.group[0].nodes[0]
-  const { linkedIn, instagram } = data.contact.nodes[0]
+  const { instagram } = data.contact.nodes[0]
 
   return (
-    <Navbar collapseOnSelect expand="md" sticky="top">
+    <Navbar collapseOnSelect expand="lg" sticky="top">
       <Navbar.Brand>
         <Link to="/">
           <h1>{name}</h1>
@@ -41,18 +40,10 @@ const Navigation = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav>
-          <Link to="/portraiture">
-            <h2>Portraiture</h2>
-          </Link>
-          <Link to="/portraiture">
-            <h2>Portraiture</h2>
-          </Link>
-          <Link to="/about">
-            <h2>About</h2>
-          </Link>
-          <Link to="/contact">
-            <h2>Contact</h2>
-          </Link>
+          <Link to="/portraiture">Portraiture</Link>
+          <Link to="/cityandlifestyle">City+Lifestyle</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
