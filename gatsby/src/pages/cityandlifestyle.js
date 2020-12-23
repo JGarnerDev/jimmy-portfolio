@@ -111,7 +111,7 @@ const CityAndLifestylePage = ({ data: { photos } }) => {
 
 export const query = graphql`
   query CityAndLifestylePhotosQuery {
-    photos: allSanityCityandlifestyle {
+    photos: allSanityCityandlifestyle(sort: { fields: name, order: ASC }) {
       nodes {
         photo {
           asset {

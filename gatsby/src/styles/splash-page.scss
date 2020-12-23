@@ -1,4 +1,4 @@
-#splash {
+.splash-page {
   display: flex;
   flex-direction: column;
 
@@ -13,7 +13,7 @@
     transition: opacity 1s ease !important;
   }
 
-  #content {
+  .content {
     position: absolute;
     z-index: 1000;
 
@@ -61,7 +61,7 @@
       font-size: 24px;
       text-transform: uppercase;
       font-weight: bold;
-      margin-top: 120px;
+      margin-top: 220px;
     }
 
     #social {

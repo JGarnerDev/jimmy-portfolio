@@ -31,24 +31,24 @@ const SplashPage = ({ data }) => {
   const { name, description } = data.brand.group[0].nodes[0]
 
   return (
-    <main id="splash">
-      <div id="content">
+    <main className="splash-page">
+      <div className="content">
         <div id="brand">
           <h1>{name}</h1>
           <h2>{description}</h2>
         </div>
         <ul id="links">
           <li>
-            <Link to="/portraiture">Portraiture</Link>
-          </li>
-          <li>
             <Link to="/portraiture">city+lifestyle</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/portraiture">Portraiture</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
           </li>
         </ul>
         <ul id="social">
@@ -69,7 +69,7 @@ const SplashPage = ({ data }) => {
 
 export const query = graphql`
   query SplashPageQuery {
-    photos: allSanitySplashpagePhoto {
+    photos: allSanitySplashpagePhoto(sort: { fields: name, order: ASC }) {
       nodes {
         photo {
           asset {

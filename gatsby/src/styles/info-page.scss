@@ -1,0 +1,44 @@
+.info-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .content {
+    max-width: 1000px;
+    padding: 10px;
+    p {
+      max-width: 440px;
+    }
+  }
+
+  &.contact {
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+
+      margin: 0;
+      padding: 0;
+      a,
+      p {
+        width: 80vw;
+        max-width: 440px;
+      }
+
+      a {
+        text-align: right;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+    height: auto;
+
+    &.contact {
+      .content {
+      }
+    }
+  }
+}

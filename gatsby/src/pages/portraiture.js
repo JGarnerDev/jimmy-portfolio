@@ -111,7 +111,7 @@ const PortraiturePage = ({ data: { photos } }) => {
 
 export const query = graphql`
   query PortraiturePhotosQuery {
-    photos: allSanityPortaiturePhoto {
+    photos: allSanityPortaiturePhoto(sort: { fields: name, order: ASC }) {
       nodes {
         photo {
           asset {

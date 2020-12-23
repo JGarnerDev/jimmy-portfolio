@@ -6,7 +6,7 @@
     margin-top: 10px;
   }
   .img-wrapper {
-    margin: 10px 10px;
+    padding: 10px 10px;
   }
 
   .carousel {
@@ -56,8 +56,11 @@
         flex: auto;
       }
       .img-wrapper {
+        padding: 0;
+        margin: 10px;
+
         min-width: calc((100vw - 314px) / 3);
-        max-width: 31.2%;
+        max-width: calc((100vw - 314px) / 3);
 
         flex-grow: 1;
       }

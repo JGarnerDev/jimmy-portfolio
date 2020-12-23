@@ -1,8 +1,10 @@
 nav {
   background: white;
+  padding: 10px !important;
   a {
     color: black;
     text-transform: uppercase;
+    text-align: right;
 
     font-weight: bold;
   }
@@ -10,9 +12,12 @@ nav {
     font-size: 20px;
     margin-top: 2px;
   }
-
   h2 {
     font-size: 20px;
+  }
+
+  .navbar-collapse {
+    margin-top: 6px;
   }
   @media only screen and (min-width: 992px) {
     flex-direction: column !important;
@@ -31,9 +36,15 @@ nav {
       line-height: 15px;
       flex-direction: column !important;
       justify-content: space-between;
-      height: 28vh;
+      align-items: flex-end;
+      height: calc(28vh + 2px);
+      width: 204px;
+
       a {
+        display: block;
         padding: 0 !important;
+
+        float: right;
       }
     }
   }
