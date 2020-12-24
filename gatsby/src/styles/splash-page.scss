@@ -1,3 +1,5 @@
+@import "./animations.scss";
+
 .splash-page {
   display: flex;
   flex-direction: column;
@@ -62,6 +64,10 @@
       text-transform: uppercase;
       font-weight: bold;
       margin-top: 220px;
+      a {
+        position: relative;
+        @include link-animation;
+      }
     }
 
     #social {

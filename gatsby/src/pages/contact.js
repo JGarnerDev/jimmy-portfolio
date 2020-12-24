@@ -8,6 +8,7 @@ const ContactPage = ({ data: { contact } }) => {
       <Nav />
 
       <div className="content">
+        <h2>Contact</h2>
         <p>{contact.nodes[0].text}</p>
 
         <a href={`mailto:${contact.nodes[0].email}`}>

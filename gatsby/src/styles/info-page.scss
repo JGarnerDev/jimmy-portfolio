@@ -3,6 +3,7 @@
   flex-direction: column;
   min-height: 100vh;
   .content {
+    margin: auto;
     max-width: 1000px;
     padding: 10px;
     p {
@@ -14,12 +15,7 @@
     .content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1;
 
-      margin: 0;
-      padding: 0;
       a,
       p {
         width: 80vw;
@@ -35,6 +31,10 @@
   @media only screen and (min-width: 992px) {
     flex-direction: row;
     height: auto;
+
+    .content {
+      margin: 64px 0 0 30px;
+    }
 
     &.contact {
       .content {
