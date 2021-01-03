@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   base = "gatsby"
-  publish = "src"
+  publish = "public"
   functions = "lambda"
   NODE_ENV = "10.15.3"
   NPM_VERSION = "6.9.0"
