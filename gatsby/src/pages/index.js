@@ -37,7 +37,6 @@ const SplashPage = ({ data }) => {
         <meta charSet="utf-8" />
         <title>Jimmy Karamanis Photography </title>
         <link rel="canonical" href="https://jimmykphotography.netlify.app/" />
-        <link rel="icon" type="image/png" href="/static/favicon.ico"></link>
       </Helmet>
       <div className="content">
         <div id="brand">

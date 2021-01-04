@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Jimmy - Professional Photography`,
-    description: ``,
+    title: `Jimmy Karamanis Photography`,
+    description: `Photography`,
     author: `Jeffrey Garner`,
   },
   plugins: [
@@ -16,6 +16,18 @@ module.exports = {
         dataset: "production",
         watchMode: true,
         token: process.env.GATSBY_SANITY_TOKEN,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Jimmy Karamanis Photography `,
+        short_name: `jimmykphotography`,
+        lang: "en",
+        description: "Photography portfolio of Jimmy Karamanis",
+        start_url: `/`,
+        display: `standalone`,
+        icon: "src/images/icon.png",
       },
     },
   ],
