@@ -11,11 +11,18 @@
     }
   }
 
+  &.about {
+    .content {
+      .img {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
   &.contact {
     .content {
       display: flex;
       flex-direction: column;
-
       a,
       p {
         width: 80vw;
@@ -36,8 +43,14 @@
       margin: 64px 0 0 30px;
     }
 
-    &.contact {
+    &.about {
       .content {
+        display: flex;
+        flex-direction: row-reverse;
+        .img {
+          width: 300px;
+          margin: 6px 60px;
+        }
       }
     }
   }

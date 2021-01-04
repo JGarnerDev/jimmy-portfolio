@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Nav from "../components/Nav"
 
@@ -12,13 +13,20 @@ const AboutPage = ({ data: { about } }) => {
     })
   }
 
+  const renderImage = () => {
+    return <Img fluid={about.nodes[0].photo.asset.fluid} />
+  }
+
   return (
-    <main className="info-page">
+    <main className="info-page about">
       <Nav />
 
       <div className="content">
-        <h2>{about.nodes[0].title}</h2>
-        {renderParagraphs()}
+        <div className="img">{renderImage()}</div>
+        <div className="text">
+          <h2>{about.nodes[0].title}</h2>
+          {renderParagraphs()}
+        </div>
       </div>
     </main>
   )
@@ -28,6 +36,13 @@ export const query = graphql`
     about: allSanityAbout {
       nodes {
         title
+        photo {
+          asset {
+            fluid(maxWidth: 4000) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
         text {
           children {
             text
