@@ -17,5 +17,13 @@ export default {
 
       description: "The main body of text on the about page",
     },
+    {
+      name: "photo",
+      title: "Personal Photo",
+      type: "image",
+      description:
+        "This is the photo of you that will appear in your about page",
+      options: { hotspot: true },
+    },
   ],
 };
