@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
 
 import Carousel from "react-bootstrap/Carousel"
@@ -32,6 +33,12 @@ const SplashPage = ({ data }) => {
 
   return (
     <main className="splash-page">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Jimmy Karamanis Photography </title>
+        <link rel="canonical" href="https://jimmykphotography.netlify.app/" />
+        <link rel="icon" type="image/png" href="/static/favicon.ico"></link>
+      </Helmet>
       <div className="content">
         <div id="brand">
           <h1>{name}</h1>
