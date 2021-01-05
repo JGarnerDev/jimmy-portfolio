@@ -1,0 +1,29 @@
+.gallery {
+  .img-wrapper {
+    padding: 10px 10px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-grow: 1;
+
+    &::after {
+      content: "";
+      flex: auto;
+    }
+    .img-wrapper {
+      padding: 0;
+      margin: 10px;
+
+      min-width: calc((100vw - 314px) / 3);
+      max-width: calc((100vw - 314px) / 3);
+
+      flex-grow: 1;
+    }
+    .gatsby-image-wrapper {
+      height: 28vh;
+    }
+  }
+}

@@ -2,6 +2,8 @@ import React from "react"
 
 import FluidImage from "../FluidImage"
 
+import "./Gallery.scss"
+
 const Gallery = ({ photos, photoClickHandler }) => {
   const renderGalleryPhotos = () =>
     photos.nodes.map((node, i) => (
@@ -9,6 +11,7 @@ const Gallery = ({ photos, photoClickHandler }) => {
         <FluidImage node={node} />
       </div>
     ))
+
   return <main className="gallery">{renderGalleryPhotos()}</main>
 }
 

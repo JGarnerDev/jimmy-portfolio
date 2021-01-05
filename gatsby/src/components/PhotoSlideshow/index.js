@@ -7,6 +7,8 @@ import { faWindowClose } from "@fortawesome/free-solid-svg-icons"
 
 import FluidImage from "../FluidImage"
 
+import "./PhotoSlideShow.scss"
+
 const PhotoSlideshow = ({ photos, start, closeSlideShow }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(start)
 
