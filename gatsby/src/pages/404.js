@@ -2,7 +2,10 @@ import React from "react"
 import { navigate } from "gatsby"
 
 const NotFoundPage = () => {
-  navigate("/")
+  if (typeof window !== "undefined") {
+    window.location = "/"
+  }
+
   return null
 }
 
