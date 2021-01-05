@@ -1,28 +1,24 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import Nav from "../components/Nav"
+import FluidImage from "../components/FluidImage"
 
 import "../styles/info-page.scss"
 
 const AboutPage = ({ data: { about } }) => {
-  const renderParagraphs = () => {
-    return about.nodes[0].text.map(textblock => {
-      return <p>{textblock.children[0].text}</p>
+  const renderParagraphs = () =>
+    about.nodes[0].text.map((textblock, i) => {
+      return <p key={i}>{textblock.children[0].text}</p>
     })
-  }
-
-  const renderImage = () => {
-    return <Img fluid={about.nodes[0].photo.asset.fluid} />
-  }
 
   return (
     <main className="info-page about">
       <Nav />
-
       <div className="content">
-        <div className="img">{renderImage()}</div>
+        <div className="img">
+          <FluidImage node={about.nodes[0]} />
+        </div>
         <div className="text">
           <h2>{about.nodes[0].title}</h2>
           {renderParagraphs()}

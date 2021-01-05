@@ -3,8 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 import { Navbar, Nav } from "react-bootstrap"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 import "./Nav.scss"

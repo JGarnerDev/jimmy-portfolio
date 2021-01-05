@@ -6,7 +6,6 @@ const ContactPage = ({ data: { contact } }) => {
   return (
     <main className="info-page contact">
       <Nav />
-
       <div className="content">
         <h2>Contact</h2>
         <p>{contact.nodes[0].text}</p>

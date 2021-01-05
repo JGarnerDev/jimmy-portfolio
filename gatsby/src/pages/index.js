@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
-import Img from "gatsby-image"
 
 import Carousel from "react-bootstrap/Carousel"
+
+import FluidImage from "../components/FluidImage"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
@@ -11,21 +12,14 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import "../styles/global.scss"
 import "../styles/splash-page.scss"
 
-const FluidImage = ({ node }) => {
-  return <Img fluid={node.photo.asset.fluid} />
-}
-
-const renderPhotoSlides = photos => {
-  return photos.nodes.map((node, i) => {
+const renderBackgroundSlides = photos =>
+  photos.nodes.map((node, i) => {
     return (
       <Carousel.Item key={i}>
         <FluidImage node={node} />
       </Carousel.Item>
     )
   })
-}
-
-// {renderPhotos(photos)}
 
 const SplashPage = ({ data }) => {
   const { instagram } = data.contact.nodes[0]
@@ -67,7 +61,7 @@ const SplashPage = ({ data }) => {
       </div>
 
       <Carousel controls={false} indicators={false} fade={true}>
-        {renderPhotoSlides(data.photos)}
+        {renderBackgroundSlides(data.photos)}
       </Carousel>
     </main>
   )
